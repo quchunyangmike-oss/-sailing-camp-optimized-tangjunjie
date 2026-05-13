@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海洋奇缘帆船夏令营 2026 | Sailing × English Musical</title>
+
+    <meta name="description" content="帆船航行 × 英文音乐剧，8月3日—7日，深圳湾游艇会。仅限16名，早鸟价¥9,980，6月1日截止。">
+
+    <!-- Open Graph (微信 / Facebook / LinkedIn / iMessage) -->
+    <meta property="og:title" content="海洋奇缘帆船夏令营 2026 | Sailing × English Musical">
+    <meta property="og:description" content="帆船航行 × 英文音乐剧，8月3日—7日，深圳湾游艇会。仅限16名，早鸟价¥9,980，6月1日截止。">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:url" content="https://haiyangqiyuan.netlify.app/">
+    <meta property="og:image" content="https://haiyangqiyuan.netlify.app/images/og-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="海洋奇缘帆船夏令营 2026 · 仅限16名 · 早鸟价¥9,980">
+    <meta property="og:site_name" content="海洋奇缘帆船夏令营">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="海洋奇缘帆船夏令营 2026 | Sailing × English Musical">
+    <meta name="twitter:description" content="帆船航行 × 英文音乐剧，8月3日—7日，深圳湾游艇会。仅限16名，早鸟价¥9,980。">
+    <meta name="twitter:image" content="https://haiyangqiyuan.netlify.app/images/og-share.jpg">
+
+    <!-- 微信优化：itemprop 标签让微信对话气泡也优先用这张图 -->
+    <meta itemprop="name" content="海洋奇缘帆船夏令营 2026">
+    <meta itemprop="description" content="帆船航行 × 英文音乐剧，8月3日—7日，深圳湾游艇会。仅限16名，早鸟价¥9,980。">
+    <meta itemprop="image" content="https://haiyangqiyuan.netlify.app/images/og-share.jpg">
+
+    <link rel="canonical" href="https://haiyangqiyuan.netlify.app/">
+
+    <!-- 首屏关键资源预加载 -->
+    <link rel="preload" as="image" href="images/hero-bg.jpg" fetchpriority="high">
+
+    <style>
+        /* ===== 1. 加载动画 ===== */
+        #page-loader {
+            position: fixed; inset: 0;
+            background: #0a1628;
+            z-index: 9999;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            gap: 1.2rem;
+            transition: opacity 0.45s ease;
+        }
+        #page-loader.hide { opacity: 0; pointer-events: none; }
+        .loader-logo { font-size: 2.5rem; }
+        .loader-text { color: rgba(255,255,255,0.8); font-size: 0.95rem; letter-spacing: 2px; font-family: sans-serif; }
+        .loader-bar {
+            width: 200px; height: 3px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .loader-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4db8d4, #e85d4a);
+            border-radius: 3px;
+            animation: loadFill 1.4s ease forwards;
+        }
+        @keyframes loadFill {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        /* ===== 2. 设计令牌 ===== */
+        :root {
+            --ocean-deep: #0a1628;
+            --ocean-mid: #1a3a5c;
+            --ocean-light: #2e7d9e;
+            --ocean-bright: #4db8d4;
+            --coral: #e85d4a;
+            --coral-light: #f07a6a;
+            --gold: #d4a843;
+            --cream: #f8f5f0;
+            --white: #ffffff;
+            --text-dark: #1a1a2e;
+            --text-gray: #5a5a6e;
+            --shadow-card: 0 10px 40px rgba(0,0,0,0.05);
+            --shadow-card-hover: 0 15px 50px rgba(0,0,0,0.10);
+        }
+
+        /* ===== 3. 基础排版 ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { max-width: 100%; overflow-x: hidden; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: inherit; }
+        section, [id] { scroll-margin-top: 64px; }
+
+        /* 工具类 */
+        .as-link { cursor: pointer; }
+
+        /* ===== 4. 顶部固定导航 ===== */
+        .fixed-nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem 1.5rem;
+            background: rgba(10,22,40,0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .fixed-nav-logo {
+            color: #fff;
+            font-size: 0.88rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .fixed-nav-btn {
+            background: var(--coral);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 0.45rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        /* ===== 5. Hero ===== */
+        .hero {
+            min-height: 100vh;
+            padding-top: 56px;
+            background: url('images/hero-bg.jpg') center center / cover no-repeat;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(10,22,40,0.72) 0%, rgba(26,58,92,0.60) 50%, rgba(46,125,158,0.45) 100%);
+        }
+        .hero-content {
+            text-align: center;
+            color: var(--white);
+            z-index: 2;
+            padding: 2rem;
+            max-width: 900px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 30px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+        .hero-subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+        }
+        .hero-tagline {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            opacity: 0.85;
+            font-weight: 300;
+        }
+        .hero-limit-badge {
+            display: inline-block;
+            background: rgba(232,93,74,0.18);
+            border: 1px solid rgba(232,93,74,0.5);
+            color: #ffb3aa;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+        .hero-cta {
+            display: inline-flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .wave-bottom {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 100px;
+            background: var(--cream);
+            clip-path: ellipse(60% 100% at 50% 100%);
+        }
+
+        /* ===== 6. 通用按钮 ===== */
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: var(--coral);
+            color: var(--white);
+            box-shadow: 0 8px 30px rgba(232, 93, 74, 0.4);
+        }
+        .btn-primary:hover {
+            background: var(--coral-light);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(232, 93, 74, 0.5);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--white);
+        }
+
+        /* ===== 7. Section 通用 ===== */
+        section { padding: 5rem 1.5rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding-left: 1.1rem; padding-right: 1.1rem; }
+        .section-header { text-align: center; margin-bottom: 4rem; }
+        .section-label {
+            display: inline-block;
+            color: var(--ocean-light);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+        .section-desc {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* ===== 8. Vision ===== */
+        .vision { background: var(--cream); }
+        .vision-quote {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem;
+            background: var(--white);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(10, 22, 40, 0.08);
+            position: relative;
+        }
+        .vision-quote::before {
+            content: '"';
+            font-family: 'Playfair Display', serif;
+            font-size: 8rem;
+            color: var(--ocean-bright);
+            opacity: 0.2;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            line-height: 1;
+        }
+        .vision-quote h3 {
+            font-size: 1.5rem;
+            color: var(--ocean-mid);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .vision-quote p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            font-style: italic;
+        }
+
+        /* ===== 9. Features ===== */
+        .features {
+            background: linear-gradient(180deg, var(--ocean-deep) 0%, var(--ocean-mid) 100%);
+            color: var(--white);
+            position: relative;
+        }
+        .features .section-title { color: var(--white); }
+        .features .section-desc { color: rgba(255,255,255,0.7); }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255,255,255,0.12);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+        .feature-icon { font-size: 3rem; margin-bottom: 1.5rem; }
+        .feature-card h3 { font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700; }
+        .feature-card p { color: rgba(255,255,255,0.75); line-height: 1.8; }
+        .feature-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .tag {
+            background: rgba(255,255,255,0.15);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        /* 图片轮播容器 */
+        .feature-photos {
+            position: relative;
+            width: 100%;
+            height: 220px;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+        .feature-photo {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+        .feature-photo > img,
+        img.feature-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .feature-photo.active { opacity: 1; }
+        .photo-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+            z-index: 3;
+        }
+        .dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            transition: background 0.3s;
+        }
+        .dot.active { background: #fff; }
+
+        /* ===== 10. Moana ===== */
+        .moana { background: var(--cream); }
+        .moana-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .moana-visual {
+            background: linear-gradient(135deg, var(--ocean-mid), var(--ocean-light));
+            border-radius: 24px;
+            padding: 2.5rem;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+            min-height: 300px;
+        }
+        .moana-visual::before {
+            content: '';
+            position: absolute;
+            top: -50%; right: -30%;
+            width: 80%; height: 150%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        }
+        .moana-poster {
+            position: absolute;
+            top: 0; right: 0;
+            height: 100%; width: 45%;
+            object-fit: cover;
+            opacity: 0.35;
+            border-radius: 0 24px 24px 0;
+        }
+        .moana-visual h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        .moana-visual .song-title {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        .moana-visual .quote {
+            font-size: 1.1rem;
+            font-style: italic;
+            border-left: 3px solid var(--gold);
+            padding-left: 1.5rem;
+            position: relative;
+            z-index: 1;
+            line-height: 1.8;
+        }
+        .moana-info h4 { color: var(--ocean-mid); font-size: 1.3rem; margin-bottom: 1rem; }
+        .moana-info p { color: var(--text-gray); margin-bottom: 1.5rem; }
+        .moana-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .highlight-item { display: flex; align-items: flex-start; gap: 1rem; }
+        .highlight-icon {
+            width: 40px; height: 40px;
+            background: var(--ocean-bright);
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .highlight-item h5 { font-size: 1rem; margin-bottom: 0.3rem; color: var(--text-dark); }
+        .highlight-item p { font-size: 0.9rem; margin: 0; }
+
+        /* 演出图 2×2 */
+        .drama-gallery-4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+        .drama-gallery-4 img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* ===== 11. Outcomes (Day-by-day) ===== */
+        .outcomes { background: linear-gradient(180deg, #eef6fb 0%, var(--cream) 100%); }
+
+        .schedule-img-wrap {
+            margin-bottom: 3rem;
+            position: relative;
+            cursor: zoom-in;
+        }
+        .schedule-img-wrap img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+        }
+        .schedule-zoom-hint {
+            position: absolute;
+            bottom: 12px; right: 12px;
+            background: rgba(0,0,0,0.55);
+            color: #fff;
+            font-size: 0.78rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            pointer-events: none;
+        }
+
+        .outcomes-list { display: flex; flex-direction: column; gap: 0; }
+        .outcome-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.8rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.07);
+        }
+        .outcome-row:last-child { border-bottom: none; }
+        .outcome-day-box {
+            flex-shrink: 0;
+            width: 72px; height: 72px;
+            background: linear-gradient(135deg, var(--ocean-light), var(--ocean-bright));
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            gap: 2px;
+        }
+        .outcome-day-box span:first-child { font-size: 0.65rem; letter-spacing: 1px; opacity: 0.85; }
+        .outcome-day-box span:last-child { font-size: 1.4rem; font-weight: 700; line-height: 1; }
+        .outcome-row-text h4 { font-size: 1.05rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.4rem; }
+        .outcome-row-text p { font-size: 0.92rem; color: var(--text-gray); line-height: 1.75; }
+        .outcome-footnote {
+            text-align: center;
+            color: #999;
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.92);
+            z-index: 9998;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .lightbox.active { display: flex; }
+        .lightbox img {
+            max-width: 100%;
+            max-height: 90vh;
+            border-radius: 12px;
+            object-fit: contain;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 1rem; right: 1rem;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+            line-height: 1;
+            background: rgba(255,255,255,0.15);
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        /* ===== 12. Security ===== */
+        .security { background: var(--ocean-deep); color: var(--white); }
+        .security .section-title { color: var(--white); }
+        .security-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .security-card {
+            background: rgba(255,255,255,0.06);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .security-card h4 { font-size: 1.1rem; margin-bottom: 0.8rem; color: var(--ocean-bright); }
+        .security-card p { color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+
+        /* ===== 13. Faculty ===== */
+        .faculty { background: var(--white); }
+        .faculty-cards-img {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            align-items: start;
+        }
+        .faculty-img-card img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.10);
+            display: block;
+        }
+        .faculty-card-label {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--ocean-mid);
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 2px solid var(--ocean-bright);
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== 14. Resources ===== */
+        .resources { background: linear-gradient(180deg, var(--cream) 0%, var(--white) 100%); }
+        .resources-content { text-align: center; max-width: 800px; margin: 0 auto; }
+        .resources-content h3 { font-size: 1.8rem; color: var(--ocean-mid); margin-bottom: 1rem; }
+        .resources-content p { color: var(--text-gray); font-size: 1.1rem; }
+        .resources-content + .resources-content { margin-top: 3.5rem; }
+        .camp-location {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            margin-top: 2rem;
+            font-weight: 600;
+        }
+        .camp-note {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-top: 0.8rem;
+        }
+        .venue-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+        .venue-gallery img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .venue-gallery img:hover { transform: scale(1.03); }
+
+        /* ===== 15. Pricing ===== */
+        .pricing {
+            background: var(--ocean-deep);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        .pricing::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at top, rgba(77, 184, 212, 0.15) 0%, transparent 60%);
+        }
+        .pricing .section-title { color: var(--white); }
+        .pricing .section-label { color: var(--ocean-bright); }
+        .pricing-card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 30px;
+            padding: 3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .early-bird-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #e85d4a, #f07a6a);
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 700;
+            padding: 0.5rem 1.4rem;
+            border-radius: 50px;
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+        .early-bird-countdown {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 1.2rem;
+        }
+        .early-bird-countdown span { color: #ffcc80; font-weight: 700; }
+        .price-original {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            opacity: 0.6;
+            margin-bottom: 0.5rem;
+        }
+        .price-current {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .price-note {
+            color: var(--coral-light);
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        .price-includes,
+        .refund-policy {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+        .price-includes h4,
+        .refund-policy h4 {
+            color: var(--white);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .price-includes ul { list-style: none; padding: 0; }
+        .price-includes li {
+            padding: 0.3rem 0 0.3rem 1.5rem;
+            position: relative;
+            color: rgba(255,255,255,0.8);
+        }
+        .price-includes li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--ocean-bright);
+        }
+        .refund-policy p { color: var(--white); font-size: 0.9rem; line-height: 2; }
+        .pricing-cta { font-size: 1.2rem; padding: 1.2rem 3rem; }
+
+        /* ===== 16. Requirements ===== */
+        .requirements { background: var(--white); }
+        .req-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .req-card {
+            background: var(--cream);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+        }
+        .req-card .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .req-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .req-card p { color: var(--text-gray); font-size: 0.9rem; }
+        .camper-limit {
+            background: linear-gradient(135deg, var(--ocean-mid), var(--ocean-light));
+            color: var(--white);
+            border-radius: 24px;
+            padding: 3rem;
+            text-align: center;
+        }
+        .camper-limit .number {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+        .camper-limit .label { font-size: 1.2rem; margin-bottom: 1rem; opacity: 0.9; }
+        .camper-limit p { max-width: 500px; margin: 0 auto; opacity: 0.85; }
+
+        /* ===== 17. FAQ ===== */
+        .faq { background: var(--cream); }
+        .faq-list { display: flex; flex-direction: column; gap: 0; }
+        .faq-item {
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        .faq-item:first-child { border-top: 1px solid rgba(0,0,0,0.08); }
+        .faq-q {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.3rem 0;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-dark);
+            gap: 1rem;
+        }
+        .faq-arrow {
+            font-size: 1.2rem;
+            color: var(--ocean-bright);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+        .faq-item.open .faq-arrow { transform: rotate(180deg); }
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+            transition: max-height 0.4s ease, padding 0.3s;
+            padding: 0;
+        }
+        .faq-item.open .faq-a { max-height: 320px; padding-bottom: 1.3rem; }
+        .faq-link { color: var(--ocean-bright); cursor: pointer; text-decoration: underline; }
+
+        /* ===== 18. CTA ===== */
+        .cta {
+            background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-mid) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 5rem 1.5rem;
+        }
+        .cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.6rem, 5vw, 2.2rem);
+            margin-bottom: 0.5rem;
+        }
+        .cta-lede {
+            color: rgba(255,255,255,0.85);
+            font-size: 0.95rem;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        /* 倒计时 */
+        .countdown {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem 0 1.5rem;
+        }
+        .countdown-label {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.9);
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+        .countdown-boxes { display: flex; align-items: center; gap: 0.5rem; }
+        .countdown-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255,255,255,0.18);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 12px;
+            padding: 0.6rem 1rem;
+            min-width: 64px;
+        }
+        .countdown-item span:first-child {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1;
+            text-shadow: 0 0 20px rgba(77,184,212,0.8);
+        }
+        .countdown-item span:last-child {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.7);
+            margin-top: 2px;
+        }
+        .countdown-sep {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 12px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            margin: 2rem 0;
+        }
+        .contact-phone {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+        .contact-name { font-size: 1.1rem; opacity: 0.9; }
+        .deposit-note {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+        .deposit-main { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+        .deposit-sub { font-size: 0.83rem; color: rgba(255,255,255,0.75); line-height: 1.9; }
+
+        .qr-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+        .qr-img-wrap { position: relative; display: inline-block; }
+        .qr-img-wrap img {
+            width: 180px; height: 180px;
+            object-fit: cover;
+            border-radius: 16px;
+            background: #fff;
+            padding: 8px;
+        }
+        .qr-hint {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: rgba(0,0,0,0.55);
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 0.35rem 0;
+            border-radius: 0 0 12px 12px;
+            letter-spacing: 0.3px;
+        }
+        .qr-label { font-size: 0.9rem; opacity: 0.8; }
+        .qr-download-btn {
+            display: inline-block;
+            margin-top: 0.9rem;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.35);
+            color: #fff;
+            font-size: 0.88rem;
+            font-weight: 600;
+            padding: 0.55rem 1.4rem;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .cta-footnote {
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.82rem;
+            margin-top: 2rem;
+        }
+
+        /* ===== 19. Footer & Float ===== */
+        .footer {
+            background: var(--ocean-deep);
+            color: rgba(255,255,255,0.5);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .float-decor {
+            position: fixed;
+            bottom: 30px; right: 30px;
+            z-index: 100;
+        }
+        .float-btn {
+            background: var(--coral);
+            color: var(--white);
+            width: 60px; height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 8px 30px rgba(232, 93, 74, 0.4);
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* ===== 20. Fade-in 动画 ===== */
+        .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* ============================================ */
+        /* ===== Responsive (mobile-first overrides) === */
+        /* ============================================ */
+
+        /* 平板 481–1024px */
+        @media (min-width: 481px) and (max-width: 1024px) {
+            .feature-grid { grid-template-columns: 1fr 1fr; }
+            .faculty-cards-img { grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; }
+            .req-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        /* 桌面 ≤768px (overlap with tablet for some grids) */
+        @media (max-width: 768px) {
+            section { padding: 3rem 1rem; }
+            .moana-content { gap: 1.5rem; }
+            .moana-visual { padding: 2rem; }
+            .moana-visual h3 { font-size: 2rem; }
+            .moana-highlights { grid-template-columns: 1fr; }
+            .timeline-item { flex-direction: column; gap: 1rem; }
+            .pricing-card { padding: 2rem 1.5rem; }
+            .price-current { font-size: 3rem; }
+            .venue-gallery { grid-template-columns: 1fr; }
+            .faculty-cards-img { grid-template-columns: 1fr; }
+        }
+
+        /* 手机 ≤480px */
+        @media (max-width: 480px) {
+            section { padding: 2.5rem 1.1rem; }
+
+            /* Hero */
+            .hero { min-height: 100svh; }
+            .hero-content { padding: 2rem 1.1rem 3rem; }
+            .hero-badge { font-size: 0.72rem; letter-spacing: 1.5px; padding: 0.4rem 1rem; margin-bottom: 1.2rem; }
+            .hero h1 { font-size: clamp(1.9rem, 8vw, 2.6rem); line-height: 1.2; margin-bottom: 0.7rem; }
+            .hero-subtitle { font-size: 0.88rem; letter-spacing: 1px; margin-bottom: 0.8rem; }
+            .hero-tagline { font-size: 0.92rem; margin-bottom: 1.8rem; line-height: 1.7; }
+            .hero-limit-badge { font-size: 0.8rem; }
+            .hero-cta { flex-direction: column; align-items: center; gap: 0.7rem; }
+            .btn { padding: 0.9rem 2rem; font-size: 0.95rem; width: 100%; max-width: 280px; text-align: center; }
+            .wave-bottom { height: 60px; }
+
+            /* Section 通用 */
+            .section-header { margin-bottom: 2rem; }
+            .section-label { font-size: 0.72rem; letter-spacing: 2px; }
+            .section-title { font-size: clamp(1.4rem, 5.5vw, 1.8rem); line-height: 1.3; }
+            .section-desc { font-size: 0.92rem; }
+
+            /* Vision */
+            .vision-quote { padding: 1.8rem 1.3rem; border-radius: 16px; }
+            .vision-quote::before { font-size: 4.5rem; top: -10px; left: 12px; }
+            .vision-quote h3 { font-size: 1.15rem; }
+            .vision-quote p { font-size: 0.92rem; }
+
+            /* Feature */
+            .feature-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+            .feature-card { padding: 1.4rem; border-radius: 16px; }
+            .feature-photos { height: 190px; border-radius: 12px; }
+            .feature-icon { font-size: 2rem; margin-bottom: 0.8rem; }
+            .feature-card h3 { font-size: 1.15rem; }
+            .feature-card p { font-size: 0.92rem; }
+            .tag { font-size: 0.75rem; padding: 0.25rem 0.65rem; }
+
+            /* Moana */
+            .moana-visual { padding: 1.6rem; border-radius: 16px; }
+            .moana-visual h3 { font-size: 1.7rem; }
+            .moana-visual .song-title { font-size: 1rem; }
+            .moana-visual .quote { font-size: 0.9rem; padding-left: 1rem; }
+            .moana-info h4 { font-size: 1.1rem; }
+            .moana-info p { font-size: 0.92rem; }
+            .highlight-item h5 { font-size: 0.95rem; }
+            .highlight-item p { font-size: 0.85rem; }
+            .drama-gallery-4 { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+            .drama-gallery-4 img { border-radius: 10px; }
+
+            /* Outcomes */
+            .schedule-img-wrap { margin-bottom: 1.8rem; }
+            .schedule-img-wrap img { border-radius: 12px; }
+            .outcome-day-box { width: 62px; height: 62px; border-radius: 13px; }
+            .outcome-day-box span:last-child { font-size: 1.2rem; }
+            .outcome-row { gap: 1rem; padding: 1.4rem 0; }
+            .outcome-row-text h4 { font-size: 1rem; }
+            .outcome-row-text p { font-size: 0.88rem; }
+
+            /* Security */
+            .security-grid { grid-template-columns: 1fr; gap: 0.9rem; }
+            .security-card { padding: 1.2rem; border-radius: 14px; }
+            .security-card h4 { font-size: 1rem; }
+            .security-card p { font-size: 0.88rem; }
+
+            /* Faculty */
+            .faculty-cards-img { grid-template-columns: 1fr; gap: 1.5rem; }
+            .faculty-img-card img { border-radius: 16px; }
+            .faculty-card-label { font-size: 0.95rem; margin-bottom: 0.7rem; }
+
+            /* Resources */
+            .resources-content h3 { font-size: 1.3rem; }
+            .resources-content p { font-size: 0.92rem; }
+            .camp-location { font-size: 0.88rem; padding: 0.7rem 1.2rem; margin-top: 1rem; }
+            .venue-gallery { grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-top: 1.3rem; }
+            .venue-gallery img { border-radius: 10px; }
+
+            /* Pricing */
+            .pricing-card { padding: 1.6rem 1.2rem; border-radius: 20px; }
+            .price-original { font-size: 1rem; }
+            .price-current { font-size: 2.8rem; }
+            .price-note { font-size: 0.85rem; margin-bottom: 1.5rem; }
+            .price-includes, .refund-policy { padding: 1.2rem; border-radius: 12px; }
+            .price-includes h4, .refund-policy h4 { font-size: 0.95rem; }
+            .price-includes li { font-size: 0.88rem; }
+            .refund-policy p { font-size: 0.85rem; line-height: 1.9; }
+
+            /* Requirements */
+            .req-grid { grid-template-columns: 1fr 1fr; gap: 0.9rem; margin-bottom: 1.8rem; }
+            .req-card { padding: 1.2rem; border-radius: 14px; }
+            .req-card .icon { font-size: 1.9rem; margin-bottom: 0.7rem; }
+            .req-card h4 { font-size: 0.95rem; }
+            .req-card p { font-size: 0.85rem; }
+            .camper-limit { padding: 2rem 1.2rem; border-radius: 18px; }
+            .camper-limit .number { font-size: 4rem; }
+            .camper-limit .label { font-size: 1rem; }
+            .camper-limit p { font-size: 0.92rem; }
+
+            /* FAQ */
+            .faq-q { font-size: 0.95rem; padding: 1.1rem 0; }
+
+            /* CTA */
+            .cta { padding: 3.5rem 1.1rem; }
+            .countdown-item { min-width: 54px; padding: 0.5rem 0.7rem; }
+            .countdown-item span:first-child { font-size: 1.5rem; }
+            .contact-phone { font-size: 1.45rem; }
+            .contact-name { font-size: 1rem; }
+            .deposit-note { font-size: 0.88rem; padding: 0.8rem 1.2rem; }
+            .qr-img-wrap img { width: 150px; height: 150px; }
+            .qr-label { font-size: 0.85rem; }
+
+            /* Nav & Float */
+            .fixed-nav-logo { font-size: 0.78rem; }
+            .fixed-nav-btn { font-size: 0.78rem; padding: 0.4rem 1rem; }
+            .float-btn { width: 50px; height: 50px; font-size: 1.25rem; }
+            .float-decor { bottom: 18px; right: 14px; }
+
+            /* Footer */
+            .footer { padding: 1.5rem 1rem; font-size: 0.78rem; }
+        }
+
+        /* 超小屏 ≤360px */
+        @media (max-width: 360px) {
+            .hero h1 { font-size: 1.75rem; }
+            .hero-subtitle { font-size: 0.8rem; }
+            .btn { padding: 0.8rem 1.5rem; font-size: 0.88rem; }
+            .section-title { font-size: 1.3rem; }
+            .price-current { font-size: 2.4rem; }
+            .camper-limit .number { font-size: 3.5rem; }
+            .contact-phone { font-size: 1.3rem; }
+            .drama-gallery-4 img { aspect-ratio: 1/1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div id="page-loader" aria-hidden="true">
+        <div class="loader-logo">⛵</div>
+        <div class="loader-text">LOADING · 海洋奇缘</div>
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+
+    <!-- 固定顶部导航 -->
+    <nav class="fixed-nav">
+        <div class="fixed-nav-logo">⛵ 海洋奇缘帆船夏令营</div>
+        <button type="button" class="fixed-nav-btn" data-scroll-to="qrcode">立即报名</button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">2026 · 8月3日—7日 · 深圳 · 走读营</div>
+            <h1>海洋奇缘帆船夏令营</h1>
+            <p class="hero-subtitle">SAILING LEADERSHIP × ENGLISH MUSICAL</p>
+            <p class="hero-tagline">我们不只是做活动，我们在设计孩子的成长体验<br>帆船的坚韧与音乐剧的表达深度融合</p>
+            <div class="hero-limit-badge">🔥 仅限 16 名 · 先报先得</div>
+            <div class="hero-cta">
+                <button type="button" class="btn btn-primary" data-scroll-to="qrcode">立即报名</button>
+                <button type="button" class="btn btn-outline" data-scroll-to="features">了解详情</button>
+            </div>
+        </div>
+        <div class="wave-bottom"></div>
+    </section>
+
+    <!-- Vision -->
+    <section class="vision">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">Brand Vision</div>
+                <h2 class="section-title">HappyChildhood 快乐童年</h2>
+            </div>
+            <div class="vision-quote fade-in">
+                <h3>超越简单的"玩耍"</h3>
+                <p>我们将帆船的坚韧与音乐剧的表达深度融合，"从不敢到敢，从依赖到掌控"——在真实海域判断变幻莫测的风向中锻炼瞬时决策力，在聚光灯下完成自我的华丽突破。一条船、一场剧，每个孩子都是关键环节。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">Project Core</div>
+                <h2 class="section-title">身体 + 表达 = 真正的成长</h2>
+                <p class="section-desc">一次完整的成长体验，铸造少年领袖力，成就孩子自信力</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-photos">
+                        <picture class="feature-photo active">
+                            <source type="image/webp" srcset="images/feature-sail-1-800.webp 800w, images/feature-sail-1.webp 1600w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 600px">
+                            <source type="image/jpeg" srcset="images/feature-sail-1-800.jpg 800w, images/feature-sail-1.jpg 1600w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 600px">
+                            <img src="images/feature-sail-1.jpg" alt="帆船训练" loading="lazy" decoding="async" width="1600" height="1200">
+                        </picture>
+                        <picture class="feature-photo">
+                            <source type="image/webp" srcset="images/feature-sail-2-800.webp 800w, images/feature-sail-2.webp 1600w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 600px">
+                            <source type="image/jpeg" srcset="images/feature-sail-2-800.jpg 800w, images/feature-sail-2.jpg 1600w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 600px">
+                            <img src="images/feature-sail-2.jpg" alt="帆船训练" loading="lazy" decoding="async" width="1600" height="1200">
+                        </picture>
+                        <picture class="feature-photo">
+                            <source type="image/webp" srcset="images/feature-sail-3-800.webp 800w, images/feature-sail-3.webp 1600w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 600px">
+                            <source type="image/jpeg" srcset="images/feature-sail-3-800.jpg 800w, images/feature-sail-3.jpg 1600w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 600px">
+                            <img src="images/feature-sail-3.jpg" alt="帆船训练" loading="lazy" decoding="async" width="1600" height="1067">
+                        </picture>
+                        <picture class="feature-photo">
+                            <source type="image/webp" srcset="images/feature-sail-4-800.webp 800w, images/feature-sail-4.webp 1600w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 600px">
+                            <source type="image/jpeg" srcset="images/feature-sail-4-800.jpg 800w, images/feature-sail-4.jpg 1600w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 600px">
+                            <img src="images/feature-sail-4.jpg" alt="帆船训练" loading="lazy" decoding="async" width="1600" height="1067">
+                        </picture>
+                        <div class="photo-dots">
+                            <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="feature-icon">🚤</div>
+                    <h3>帆船航行</h3>
+                    <p>在风浪中掌舵，真实世界的生存训练。航线选择是无止境的判断练习，每一个动作都影响航速与平衡。风浪不可控，学会平和面对变化。</p>
+                    <div class="feature-tags">
+                        <span class="tag">决策能力</span>
+                        <span class="tag">执行专注</span>
+                        <span class="tag">抗挫精神</span>
+                    </div>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-photos">
+                        <img src="images/feature-drama-1.jpg" alt="英文戏剧" class="feature-photo active" loading="lazy" decoding="async" width="900" height="599">
+                        <img src="images/feature-drama-2.jpg" alt="英文戏剧" class="feature-photo" loading="lazy" decoding="async" width="900" height="599">
+                        <img src="images/feature-drama-3.jpg" alt="英文戏剧" class="feature-photo" loading="lazy" decoding="async" width="900" height="599">
+                        <img src="images/feature-drama-4.jpg" alt="英文戏剧" class="feature-photo" loading="lazy" decoding="async" width="900" height="1350">
+                        <div class="photo-dots">
+                            <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="feature-icon">🎭</div>
+                    <h3>英文戏剧</h3>
+                    <p>在聚光灯下绽放，语言的本质是表达自己。从被动听讲走向主动开口，站上舞台是对自我边界的跨越，肢体、声音与情绪的完美协同。</p>
+                    <div class="feature-tags">
+                        <span class="tag">英语表达</span>
+                        <span class="tag">自信跃迁</span>
+                        <span class="tag">综合训练</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moana -->
+    <section class="moana">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">The Soul of the Play</div>
+                <h2 class="section-title">剧目灵魂：迪士尼《海洋奇缘》</h2>
+            </div>
+            <div class="moana-content">
+                <div class="moana-visual fade-in">
+                    <img src="images/moana-poster.jpg" alt="Moana海报" class="moana-poster" loading="lazy" decoding="async" width="900" height="1201">
+                    <h3>Moana</h3>
+                    <p class="song-title">"HOW FAR I'LL GO"</p>
+                    <p class="quote">"谁说我们必须留在岸上？"<br><br>莫阿娜不仅是波利尼西亚的公主，更是一位天生的航海者（Wayfinder）。通过剧目排演，孩子将深刻理解：勇气、责任以及对未知的探索欲，是跨越山海的唯一门票。</p>
+                </div>
+                <div class="moana-info fade-in">
+                    <h4>为什么选择《Moana》？</h4>
+                    <p>因为它与帆船精神完美契合——探索、勇气、自我发现。孩子在排演过程中，不仅学习英语表达，更在角色中找到自己的影子。</p>
+                    <div class="moana-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎵</div>
+                            <div>
+                                <h5>经典传唱</h5>
+                                <p>林-曼努尔·米兰达创作原版曲目</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🌺</div>
+                            <div>
+                                <h5>文化觉醒</h5>
+                                <p>探索波利尼西亚古老航海文化</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drama-gallery-4">
+                        <img src="images/drama-show-1.jpg" alt="演出现场" loading="lazy" decoding="async" width="900" height="599">
+                        <img src="images/drama-show-2.jpg" alt="演出现场" loading="lazy" decoding="async" width="900" height="599">
+                        <img src="images/drama-show-3.jpg" alt="演出现场" loading="lazy" decoding="async" width="900" height="599">
+                        <img src="images/drama-show-4.jpg" alt="演出现场" loading="lazy" decoding="async" width="900" height="599">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="outcomes">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">Outcomes</div>
+                <h2 class="section-title">课程收获</h2>
+                <p class="section-desc">从真实环境下的执行判断，到完成一次完整的成长蜕变</p>
+            </div>
+
+            <div class="schedule-img-wrap fade-in" id="schedule-trigger">
+                <picture>
+                    <source type="image/webp" srcset="images/schedule.webp">
+                    <img src="images/schedule.jpg" alt="5天双线成长日程" id="schedule-img" loading="lazy" decoding="async" width="1400" height="1099">
+                </picture>
+                <div class="schedule-zoom-hint">🔍 点击放大查看</div>
+            </div>
+
+            <div class="lightbox" id="schedule-lightbox" aria-hidden="true">
+                <button type="button" class="lightbox-close" aria-label="关闭">✕</button>
+                <img id="schedule-lightbox-img" src="" alt="5天双线成长日程">
+            </div>
+
+            <div class="outcomes-list">
+                <div class="outcome-row fade-in">
+                    <div class="outcome-day-box"><span>DAY</span><span>01</span></div>
+                    <div class="outcome-row-text">
+                        <h4>真实环境下的执行与判断</h4>
+                        <p>初次接触帆船与海洋，学习基础航行知识与安全规范，在教练指导下完成首次出海体验，锻炼瞬时决策力。</p>
+                    </div>
+                </div>
+                <div class="outcome-row fade-in">
+                    <div class="outcome-day-box"><span>DAY</span><span>02</span></div>
+                    <div class="outcome-row-text">
+                        <h4>深度团队协作与共情力</h4>
+                        <p>分组协作完成航行任务，在团队中承担不同角色，学习沟通与配合，一条船、一场剧，每个孩子都是关键环节。</p>
+                    </div>
+                </div>
+                <div class="outcome-row fade-in">
+                    <div class="outcome-day-box"><span>DAY</span><span>03</span></div>
+                    <div class="outcome-row-text">
+                        <h4>英文表达与舞台掌控力</h4>
+                        <p>深入《Moana》剧目排练，在专业戏剧导师指导下，用英语表达情感，从被动听讲走向主动开口表达。</p>
+                    </div>
+                </div>
+                <div class="outcome-row fade-in">
+                    <div class="outcome-day-box"><span>DAY</span><span>04</span></div>
+                    <div class="outcome-row-text">
+                        <h4>自信心与多维情绪管理</h4>
+                        <p>挑战更高难度的航行任务，面对舞台彩排的压力，学会管理情绪，站上舞台是对自我边界的跨越。</p>
+                    </div>
+                </div>
+                <div class="outcome-row fade-in">
+                    <div class="outcome-day-box"><span>DAY</span><span>05</span></div>
+                    <div class="outcome-row-text">
+                        <h4>完成一次完整的成长蜕变</h4>
+                        <p>帆船挑战赛与正式舞台展演，展示5天所学，收获证书与荣誉，从不敢到敢，从依赖到掌控。</p>
+                    </div>
+                </div>
+            </div>
+            <p class="outcome-footnote">* 实际展演内容会根据具体情况做出适当调整 · 排练演出服装道具由剧组统一准备</p>
+        </div>
+    </section>
+
+    <!-- Security -->
+    <section class="security">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">Security</div>
+                <h2 class="section-title">安全保障</h2>
+                <p class="section-desc">专业装备 · 严格标准 · 全程守护</p>
+            </div>
+            <div class="security-grid">
+                <div class="security-card fade-in">
+                    <h4>🦺 专业安全装备</h4>
+                    <p>配备全套符合国际标准的救生衣、头盔及专业帆船护具，确保每一位营员的安全。</p>
+                </div>
+                <div class="security-card fade-in">
+                    <h4>🌤️ 气象评估机制</h4>
+                    <p>实时监控风速与浪高，根据严苛的天气标准决定出海时机，恶劣天气绝不冒险。</p>
+                </div>
+                <div class="security-card fade-in">
+                    <h4>👥 极高师生配比</h4>
+                    <p>精品小班制，多名助教全程跟随，确保每个孩子全天候在视线范围内。</p>
+                </div>
+                <div class="security-card fade-in">
+                    <h4>🚤 专业救生保障</h4>
+                    <p>营地固定救生艇值守，教练团队均持有国际水上急救证书，应急响应迅速。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty -->
+    <section class="faculty">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">Faculty</div>
+                <h2 class="section-title">师资团队</h2>
+            </div>
+            <div class="faculty-cards-img fade-in">
+                <div class="faculty-img-card">
+                    <div class="faculty-card-label">⛵ 帆船总教练：唐俊杰</div>
+                    <picture>
+                        <source type="image/webp" srcset="images/faculty-tang.webp">
+                        <img src="images/faculty-tang.jpg" alt="唐俊杰教练介绍" loading="lazy" decoding="async" width="800" height="1069">
+                    </picture>
+                </div>
+                <div class="faculty-img-card">
+                    <div class="faculty-card-label">🎭 英文戏剧导师</div>
+                    <picture>
+                        <source type="image/webp" srcset="images/faculty-xielin.webp">
+                        <img src="images/faculty-xielin.jpg" alt="英文戏剧导师介绍" loading="lazy" decoding="async" width="800" height="1680">
+                    </picture>
+                </div>
+                <div class="faculty-img-card">
+                    <div class="faculty-card-label">👩‍💼 总领队：何晓晴</div>
+                    <picture>
+                        <source type="image/webp" srcset="images/faculty-xiaoqing.webp">
+                        <img src="images/faculty-xiaoqing.jpg" alt="晓晴老师介绍" loading="lazy" decoding="async" width="800" height="1069">
+                    </picture>
+                </div>
+            </div>
+            <p class="outcome-footnote">* 英文戏剧导师以最终排课安排为准</p>
+        </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="resources">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">Resources</div>
+                <h2 class="section-title">顶级营地资源</h2>
+            </div>
+            <div class="resources-content fade-in">
+                <h3>深圳湾游艇会</h3>
+                <p>依托深圳湾游艇会顶级硬件设施，为孩子提供专业的帆船训练场地与演出舞台。得天独厚的地理位置，让城市与自然完美融合。</p>
+                <div class="camp-location"><span>📍</span> 深圳湾游艇会 · 独家体验</div>
+            </div>
+            <div class="venue-gallery fade-in">
+                <picture>
+                    <source type="image/webp" srcset="images/venue-yacht-1-800.webp 800w, images/venue-yacht-1.webp 1200w" sizes="(max-width: 480px) 50vw, (max-width: 768px) 100vw, 600px">
+                    <source type="image/jpeg" srcset="images/venue-yacht-1-800.jpg 800w, images/venue-yacht-1.jpg 1200w" sizes="(max-width: 480px) 50vw, (max-width: 768px) 100vw, 600px">
+                    <img src="images/venue-yacht-1.jpg" alt="深圳湾游艇会" loading="lazy" decoding="async" width="1200" height="1600">
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="images/venue-yacht-2-800.webp 800w, images/venue-yacht-2.webp 1100w" sizes="(max-width: 480px) 50vw, (max-width: 768px) 100vw, 600px">
+                    <source type="image/jpeg" srcset="images/venue-yacht-2-800.jpg 800w, images/venue-yacht-2.jpg 1100w" sizes="(max-width: 480px) 50vw, (max-width: 768px) 100vw, 600px">
+                    <img src="images/venue-yacht-2.jpg" alt="深圳湾游艇会" loading="lazy" decoding="async" width="1100" height="732">
+                </picture>
+            </div>
+
+            <div class="resources-content fade-in">
+                <h3>保利剧院</h3>
+                <p>英文戏剧课程依托保利剧院专业演出资源，为孩子提供真实的舞台演出体验。一流的灯光音响与正式舞台，让每一位营员都能感受到聚光灯下绽放的力量。</p>
+                <div class="camp-location"><span>🎭</span> 保利剧院 · 专业舞台</div>
+                <div class="camp-note">📍 排练地点：深圳保利剧院｜🏛 演出地点：蛇口文体中心</div>
+            </div>
+            <div class="venue-gallery fade-in">
+                <picture>
+                    <source type="image/webp" srcset="images/venue-poly-1-800.webp 800w, images/venue-poly-1.webp 1100w" sizes="(max-width: 480px) 50vw, (max-width: 768px) 100vw, 600px">
+                    <source type="image/jpeg" srcset="images/venue-poly-1-800.jpg 800w, images/venue-poly-1.jpg 1100w" sizes="(max-width: 480px) 50vw, (max-width: 768px) 100vw, 600px">
+                    <img src="images/venue-poly-1.jpg" alt="保利剧院" loading="lazy" decoding="async" width="1100" height="825">
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="images/venue-poly-2-800.webp 800w, images/venue-poly-2.webp 1100w" sizes="(max-width: 480px) 50vw, (max-width: 768px) 100vw, 600px">
+                    <source type="image/jpeg" srcset="images/venue-poly-2-800.jpg 800w, images/venue-poly-2.jpg 1100w" sizes="(max-width: 480px) 50vw, (max-width: 768px) 100vw, 600px">
+                    <img src="images/venue-poly-2.jpg" alt="保利剧院" loading="lazy" decoding="async" width="1100" height="825">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">Investment</div>
+                <h2 class="section-title">费用与退改政策</h2>
+            </div>
+            <div class="pricing-card fade-in">
+                <div class="early-bird-badge">🐦 早鸟优惠 · 6月1日截止</div>
+                <div class="early-bird-countdown" id="eb-countdown"></div>
+                <div class="price-original">原价 ¥10,980</div>
+                <div class="price-current">¥9,980</div>
+                <div class="price-note">早鸟优惠 · 2人以上组团额外优惠 ¥300/人</div>
+
+                <div class="price-includes">
+                    <h4>费用包含</h4>
+                    <ul>
+                        <li>帆船训练课程</li>
+                        <li>全英戏剧课程</li>
+                        <li>场地费、师资费</li>
+                        <li>专业保险</li>
+                        <li>营地午餐</li>
+                    </ul>
+                </div>
+
+                <div class="refund-policy" id="refund">
+                    <h4>退改政策</h4>
+                    <p>
+                        开营前7天以上：全额退款<br>
+                        开营前7天以内：扣除30%费用<br>
+                        开营后：恕不退款<br>
+                        营地因特殊性原则上不允许请假，不设补课，因个人原因造成的缺课，费用不退。
+                    </p>
+                </div>
+
+                <button type="button" class="btn btn-primary pricing-cta" data-scroll-to="qrcode">立即锁定席位</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="requirements">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">Requirements</div>
+                <h2 class="section-title">营员要求</h2>
+            </div>
+            <div class="req-grid">
+                <div class="req-card fade-in">
+                    <div class="icon">🎂</div>
+                    <h4>6岁+</h4>
+                    <p>年龄要求</p>
+                </div>
+                <div class="req-card fade-in">
+                    <div class="icon">🗣️</div>
+                    <h4>有英文基础</h4>
+                    <p>能基本听懂和表达</p>
+                </div>
+                <div class="req-card fade-in">
+                    <div class="icon">📋</div>
+                    <h4>规则意识</h4>
+                    <p>能遵守营地纪律</p>
+                </div>
+                <div class="req-card fade-in">
+                    <div class="icon">🤝</div>
+                    <h4>家长配合</h4>
+                    <p>支持孩子独立成长</p>
+                </div>
+            </div>
+            <div class="camper-limit fade-in">
+                <div class="number">16</div>
+                <div class="label">营员人数限制</div>
+                <p>我们刻意限制人数，只为保证每一个孩子都能被真正看见、被深度引导。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">FAQ</div>
+                <h2 class="section-title">常见问题</h2>
+            </div>
+            <div class="faq-list" id="faq-list">
+                <div class="faq-item fade-in">
+                    <div class="faq-q">
+                        <span>孩子英文需要到什么水平？</span>
+                        <span class="faq-arrow">▾</span>
+                    </div>
+                    <div class="faq-a">能进行简单日常口语交流即可。我们会在实际彩排时综合评估孩子的口语能力、性格特点与舞台表现力，为每位营员匹配最适合的角色。</div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-q">
+                        <span>没有帆船基础可以参加吗？</span>
+                        <span class="faq-arrow">▾</span>
+                    </div>
+                    <div class="faq-a">完全可以！课程从零基础开始，循序渐进。专业教练会带孩子亲身体验真实帆船运动，安全第一，乐趣满满。</div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-q">
+                        <span>报名后可以退款吗？</span>
+                        <span class="faq-arrow">▾</span>
+                    </div>
+                    <div class="faq-a">可以的。具体退款规则请参见 <span class="faq-link" data-scroll-to="refund">退改政策</span>，开营后恕不退款。</div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-q">
+                        <span>走读营每天几点到几点？</span>
+                        <span class="faq-arrow">▾</span>
+                    </div>
+                    <div class="faq-a">
+                        每天 9:00 集合，17:30 结束，共5天。<br><br>
+                        🚢 上午 9:00–12:00｜深圳湾游艇会帆船课程<br>
+                        🍱 中午 12:00–14:30｜午餐休息（含午餐）<br>
+                        🎭 下午 14:30–17:30｜保利剧院英文戏剧排练<br><br>
+                        第5天（8月7日）结营日特别安排：19:00–20:00 在保利剧院剧场正式公演，欢迎家长现场观摩！
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-q">
+                        <span>孩子不会游泳可以参加吗？</span>
+                        <span class="faq-arrow">▾</span>
+                    </div>
+                    <div class="faq-a">完全可以！帆船运动全程在船上进行，不需要下水。每位营员全程穿戴专业救生衣，每条船上都配有持证教练全程保障安全，请放心参与。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2 class="fade-in">立即报名 · 开启航程</h2>
+            <p class="cta-lede fade-in">让孩子在真实世界中成长，在舞台上绽放光芒。<br>这不仅是一个营地，是一次成长的投资。</p>
+
+            <div class="countdown fade-in" id="countdown">
+                <p class="countdown-label">距开营还有</p>
+                <div class="countdown-boxes">
+                    <div class="countdown-item"><span id="cd-days">--</span><span>天</span></div>
+                    <div class="countdown-sep">:</div>
+                    <div class="countdown-item"><span id="cd-hours">--</span><span>时</span></div>
+                    <div class="countdown-sep">:</div>
+                    <div class="countdown-item"><span id="cd-mins">--</span><span>分</span></div>
+                </div>
+            </div>
+
+            <div class="contact-info fade-in">
+                <a href="tel:13823174480" class="contact-phone">📞 138-2317-4480</a>
+                <p class="contact-name">唐教练</p>
+
+                <div class="deposit-note">
+                    <div class="deposit-main">扫码咨询 · 先交 ¥1,000 意向金锁定早鸟价</div>
+                    <div class="deposit-sub">即使过了6月1日，缴纳意向金后仍保留 ¥9,980 早鸟权益</div>
+                    <div class="deposit-sub">确认参营后补缴尾款 · 不参营意向金全额退还</div>
+                </div>
+
+                <div class="qr-wrap" id="qrcode">
+                    <div class="qr-img-wrap">
+                        <img src="images/qr_tang.jpg" alt="唐教练微信二维码" id="qr-img" loading="lazy" decoding="async" width="180" height="180">
+                        <div class="qr-hint">长按图片可保存到手机</div>
+                    </div>
+                    <p class="qr-label">📱 扫码添加唐教练微信</p>
+                    <a id="qr-download" class="qr-download-btn" href="images/qr_tang.jpg" download="唐老师微信二维码.jpg">
+                        ↑ 长按或点击保存二维码
+                    </a>
+                </div>
+            </div>
+
+            <p class="cta-footnote">* 以实际报名缴费为准</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 HAPPYCHILDHOOD SUMMER CAMP • SHENZHEN BAY YACHT CLUB • EXCLUSIVE EXPERIENCE</p>
+        <p>YOUR CHILD'S NEW HORIZON</p>
+    </footer>
+
+    <div class="float-decor">
+        <a href="tel:13823174480" class="float-btn" title="立即咨询">📞</a>
+    </div>
+
+    <script>
+    (function () {
+        'use strict';
+
+        // —— 滚动到锚点（用 data-scroll-to 替代多份内联 onclick）——
+        document.addEventListener('click', function (e) {
+            const el = e.target.closest('[data-scroll-to]');
+            if (!el) return;
+            const target = document.getElementById(el.dataset.scrollTo);
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+
+        // —— Fade-in 入场动画 ——
+        const io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(function (el) { io.observe(el); });
+
+        // —— FAQ 展开（事件委托，避免每个 .faq-q 单独绑定 onclick）——
+        const faqList = document.getElementById('faq-list');
+        if (faqList) {
+            faqList.addEventListener('click', function (e) {
+                const q = e.target.closest('.faq-q');
+                if (q) q.parentElement.classList.toggle('open');
+            });
+        }
+
+        // —— 倒计时（开营 / 早鸟统一调度，每分钟一次）——
+        const CAMP_START = new Date('2026-08-03T09:00:00+08:00');
+        const EB_END = new Date('2026-06-01T23:59:59+08:00');
+        const $cdDays = document.getElementById('cd-days');
+        const $cdHours = document.getElementById('cd-hours');
+        const $cdMins = document.getElementById('cd-mins');
+        const $countdown = document.getElementById('countdown');
+        const $eb = document.getElementById('eb-countdown');
+
+        function pad(n) { return String(n).padStart(2, '0'); }
+
+        function tick() {
+            const now = Date.now();
+            // 开营倒计时
+            const dCamp = CAMP_START - now;
+            if (dCamp <= 0) {
+                if ($countdown) $countdown.innerHTML = '<p style="color:#fff;font-size:1.1rem;font-weight:700;">🎉 营地已开营！</p>';
+            } else {
+                const days = Math.floor(dCamp / 86400000);
+                const hours = Math.floor((dCamp % 86400000) / 3600000);
+                const mins = Math.floor((dCamp % 3600000) / 60000);
+                if ($cdDays) $cdDays.textContent = pad(days);
+                if ($cdHours) $cdHours.textContent = pad(hours);
+                if ($cdMins) $cdMins.textContent = pad(mins);
+            }
+            // 早鸟倒计时
+            if ($eb) {
+                const dEb = EB_END - now;
+                if (dEb <= 0) {
+                    $eb.innerHTML = '⚠️ 早鸟优惠已截止，当前为原价';
+                } else {
+                    const days = Math.floor(dEb / 86400000);
+                    const hours = Math.floor((dEb % 86400000) / 3600000);
+                    $eb.innerHTML = '早鸟价还剩 <span>' + days + '</span> 天 <span>' + hours + '</span> 小时截止';
+                }
+            }
+        }
+        tick();
+        setInterval(tick, 60000);
+
+        // —— 图片轮播（每个轮播一个共享的 setInterval 即可）——
+        document.querySelectorAll('.feature-photos').forEach(function (gallery) {
+            const photos = gallery.querySelectorAll('.feature-photo');
+            const dots = gallery.querySelectorAll('.dot');
+            if (!photos.length) return;
+            let current = 0;
+            setInterval(function () {
+                photos[current].classList.remove('active');
+                if (dots[current]) dots[current].classList.remove('active');
+                current = (current + 1) % photos.length;
+                photos[current].classList.add('active');
+                if (dots[current]) dots[current].classList.add('active');
+            }, 2500);
+        });
+
+        // —— 日程图 lightbox ——
+        const trigger = document.getElementById('schedule-trigger');
+        const lb = document.getElementById('schedule-lightbox');
+        const lbImg = document.getElementById('schedule-lightbox-img');
+        if (trigger && lb && lbImg) {
+            trigger.addEventListener('click', function () {
+                const sched = document.getElementById('schedule-img');
+                lbImg.src = sched.currentSrc || sched.src;
+                lb.classList.add('active');
+            });
+            lb.addEventListener('click', function () { lb.classList.remove('active'); });
+            // ESC 关闭
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') lb.classList.remove('active');
+            });
+        }
+
+        // —— 加载动画：load 事件后再隐藏，最多兜底 2.5s ——
+        const loader = document.getElementById('page-loader');
+        function hideLoader() {
+            if (!loader) return;
+            loader.classList.add('hide');
+            setTimeout(function () { loader.remove(); }, 500);
+        }
+        if (document.readyState === 'complete') {
+            hideLoader();
+        } else {
+            window.addEventListener('load', hideLoader, { once: true });
+            // 兜底：网络异常情况下也别让 loader 卡住
+            setTimeout(hideLoader, 2500);
+        }
+    })();
+    </script>
+</body>
+</html>
